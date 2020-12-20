@@ -14,6 +14,8 @@ const Footer = () => {
             })
     }, [setFooterData]);
 
+    footerData.sort((a, b) => parseInt(a.stepNumber, 10) - parseInt(b.stepNumber, 10));
+
     return (
         <div className="footer_wrapper">
             <h1>How It Works</h1>

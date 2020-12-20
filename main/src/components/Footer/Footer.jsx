@@ -14,7 +14,10 @@ const Footer = () => {
             })
     }, [setFooterData]);
 
-    footerData.sort((a, b) => parseInt(a.stepNumber, 10) - parseInt(b.stepNumber, 10));
+    if (footerData.length) {
+        footerData.sort((a, b) => parseInt(a.stepNumber, 10) - parseInt(b.stepNumber, 10));
+        footerData.map((data) => data.versionContent.sort((a, b) => new Date(b.effectiveDate) - new Date(a.effectiveDate)));
+    }
 
     return (
         <div className="footer_wrapper">

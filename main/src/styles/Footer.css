@@ -1,4 +1,12 @@
 .footer_wrapper {
     border: 2px solid #edf2f0;
     background: #edf2f0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footer_wrapper h1 {
+    color: #515453;
 }

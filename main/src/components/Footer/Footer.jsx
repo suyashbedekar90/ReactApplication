@@ -4,7 +4,8 @@ import '../../styles/Footer.css'
 const Footer = () => {
     return (
         <div className="footer_wrapper">
-            Footer
+            <h1>How It Works</h1>
+            <div>Option values</div>
         </div>
     )
 }

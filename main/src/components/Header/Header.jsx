@@ -4,7 +4,7 @@ import '../../styles/Header.css'
 const Header = () => {
     return (
         <div className="header_wrapper">
-            ENDLESS
+            <h1>ENDLESS</h1>
         </div>
     )
 }

@@ -21,15 +21,15 @@ const Footer = () => {
 
     return (
         <div className="footer_wrapper">
-            <h1>How It Works</h1>
+            <div className="section_title">How It Works</div>
             <div className="footer_content_wrapper">
                 {footerData.length > 0 &&
                     footerData.map((data) => (
                         <div className="footer_data">
-                            <span>{data.stepNumber}</span>
+                            <span className="footer_data_stepNumber">{'0' + data.stepNumber}</span>
                             <span><hr /></span>
-                            <span>{data.versionContent[0].title}</span>
-                            <span>{data.versionContent[0].body}</span>
+                            <span className="footer_data_title">{data.versionContent[0].title.toUpperCase()}</span>
+                            <span className="footer_data_body">{data.versionContent[0].body}</span>
                         </div>
                     ))
                 }

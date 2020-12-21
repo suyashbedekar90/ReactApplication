@@ -1,0 +1,9 @@
+.header_wrapper {
+    background: #333;
+    color: #79f7dc;
+    font-weight: bold;
+    padding-left: 16%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+}
